@@ -1,20 +1,11 @@
-import './App.css'
-import {Counter} from "./Counter.tsx";
-import {Button} from "./Button.tsx";
-import {useState} from "react";
+import {BrowserRouter} from "react-router-dom";
+import {Routing} from "./features/Routing.tsx";
 
 function App() {
-    const [counter, setCounter] = useState(0);
-
-    const setValue=()=>{
-        setCounter(counter + 1);
-    }
-
     return (
-        <>
-            <Counter value={counter}></Counter>
-            <Button onClick={setValue}></Button>
-        </>
+        <BrowserRouter>
+            <Routing/>
+        </BrowserRouter>
     )
 }
 
