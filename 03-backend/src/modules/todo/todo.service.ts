@@ -25,6 +25,7 @@ export class TodoService {
         title: data.title,
         content: data.content,
         done: data.done,
+        userId: 0,
       },
     });
   }
